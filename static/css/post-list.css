@@ -1,0 +1,40 @@
+.posts-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+}
+
+.posts-wrapper .post{
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.posts-wrapper  .post:nth-child(4n), .posts-wrapper  .post:nth-child(4n-1) {
+  background: red;
+}
+
+.posts-wrapper  .post:nth-child(4n-2), .posts-wrapper  .post:nth-child(4n-3) {
+  background: blue;
+}
+
+div:nth-child(4n), div:nth-child(4n-1) {
+  background: red;
+}
+div:nth-child(4n-2), div:nth-child(4n-3) {
+  background: blue;
+}
+
+.posts-wrapper  .post:nth-child(1){
+  width: 100%;
+}
+
+.post-link .post-image{
+  height: 350px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
